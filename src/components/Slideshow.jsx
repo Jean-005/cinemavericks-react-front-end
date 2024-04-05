@@ -12,7 +12,7 @@ const Slideshow = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentSlide((currentSlide + 1) % totalSlides);
-        }, 3000);
+        }, 2000);
 
         return () => clearInterval(interval);
     }, [currentSlide, totalSlides]);
